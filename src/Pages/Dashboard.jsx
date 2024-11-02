@@ -15,7 +15,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/getAllData"
+          "https://airtel-project-backend.vercel.app/api/getAllData"
         );
         setData(response.data.users); // Adjust according to your API response structure
         setLoading(false);

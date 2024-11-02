@@ -29,7 +29,7 @@ function RegistrationPage() {
     console.log(formData);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://airtel-project-backend.vercel.app/api/register",
         formData
       );
       if (response.data.success) {

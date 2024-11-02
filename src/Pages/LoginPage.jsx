@@ -12,7 +12,7 @@ function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await axios.post("https://airtel-project-backend.vercel.app/api/login", {
         username,
         password,
       });
