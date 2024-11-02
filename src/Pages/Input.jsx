@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import image from './image.jpg'
-import image1 from './submite.jpg'
+
 const Input = () => {
     // State variables for the first set of inputs
     const [shopName, setShopName] = useState('');
