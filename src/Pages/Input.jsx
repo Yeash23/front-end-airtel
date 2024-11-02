@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import image from './image.jpg'
+import image1 from './submite.jpg'
 const Input = () => {
     // State variables for the first set of inputs
     const [shopName, setShopName] = useState('');
@@ -78,8 +79,21 @@ const Input = () => {
             <img
                 src="https://upload.wikimedia.org/wikipedia/en/c/c2/Airtel_Payments_Bank_logo.png"
                 alt="Airtel Payments Bank Logo"
-                className="w-50 mx-auto mb-4"
+                className="w-32 mx-auto mb-4"
             />
+
+
+
+
+
+            <img src={image}  alt="Airtel Payments Bank Logo"
+                className="w-32 mx-auto mb-4" />
+
+
+
+
+
+
             <div className="space-y-4">
                 {!showDetails ? (
                     <>
