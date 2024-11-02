@@ -6,17 +6,19 @@ import LoginPage from "./Pages/LoginPage";
 import RegistrationPage from "./Pages/RegistrationPage";
 import Dashboard from "./Pages/Dashboard";
 import Finish from "./Pages/Finish";
+import Input from "./Pages/Input";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Input />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
           <Route path="/register" element={<RegistrationPage />}></Route>
           <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/finish" element={<Finish />}></Route>
+          <Route path="/home" element={<Home/>}></Route>
         </Routes>
       </Router>
     </>
